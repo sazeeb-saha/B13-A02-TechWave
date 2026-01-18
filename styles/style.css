@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* shared styles */
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background-color: #1a0b2e;
+}
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.display-flex {
+  display: flex;
+}
+
+/* header section style  */
+
+/* navbar style  */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+}
+.logo {
+  max-width: 219px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+.btn-primary {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  background: linear-gradient(20deg, #f7e93f 10%, #fb09b4 51%, #9100f8 100%);
+}
+.menu-bar {
+  display: none;
+}
+
+/* banner section style  */
+
+.banner-section {
+  background-image: url("../assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 170px 525px;
+}
+.banner {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.circle-image {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.center-image {
+  position: relative;
+  z-index: 2;
+}
+.banner-title {
+  font-size: 3.75rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.banner-info {
+  color: #ffffff;
+  margin-top: 15px;
+}
+.btn-container {
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 8px;
+}
+.btn-secondary {
+  border: 1px solid #00ff88;
+  padding: 12px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #00ff88;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-list,
+  .nav-btn {
+    display: none;
+  }
+  .menu-bar {
+    display: flex;
+  }
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo {
+    max-width: 137px;
+  }
+}
