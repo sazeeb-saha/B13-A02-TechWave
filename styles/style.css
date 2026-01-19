@@ -173,6 +173,9 @@ body {
   margin-bottom: 80px;
   text-transform: uppercase;
 }
+
+/* why choose section  */
+
 .why-choose-section {
   text-align: center;
   background-color: #230e3d;
@@ -229,7 +232,55 @@ body {
   grid-column: span 2;
 }
 
-/* responsive for mobile or small device */
+/* episode section style  */
+
+.episode-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.episode-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.video-container {
+  justify-content: space-between;
+  gap: 30px;
+}
+.video-card {
+  background-color: #250d44;
+  border-radius: 30px;
+  max-width: 400px;
+  height: 440px;
+}
+.video-card iframe {
+  border-radius: 30px 30px 0 0;
+}
+.video-content {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 24px;
+}
+.video-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.video-info {
+  font-size: 1rem;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.video-duration {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  color: #00ff88;
+  font-weight: 600;
+}
+/*! responsive for mobile or small device */
 @media screen and (max-width: 576px) {
   .nav-list,
   .nav-btn {
@@ -329,6 +380,24 @@ body {
   .choose-title {
     padding-top: 40px;
     padding-bottom: 16px;
+  }
+  .episode-section {
+    padding: 40px 20px;
+  }
+  .video-card {
+    max-width: 380px;
+    height: 440px;
+  }
+  .video-card iframe {
+    max-width: 380px;
+    height: 225px;
+  }
+  .video-container {
+    flex-direction: column;
+  }
+  .video-title {
+    font-size: 1rem;
+    font-weight: 700;
   }
 }
 
