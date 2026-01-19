@@ -139,7 +139,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-.about-title {
+.section-title {
   font-size: 3rem;
   color: #ffffff;
   margin-bottom: 16px;
@@ -172,6 +172,61 @@ body {
   line-height: 26px;
   margin-bottom: 80px;
   text-transform: uppercase;
+}
+.why-choose-section {
+  text-align: center;
+  background-color: #230e3d;
+}
+.choose-title {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.features {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  padding-bottom: 120px;
+}
+.feature-card {
+  background-color: rgba(53, 17, 101, 0.4);
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+.feature-card img {
+  padding-bottom: 16px;
+}
+.card-info {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 26px;
+  text-align: start;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+.audio-card {
+  grid-row: span 2;
+}
+.mobile-friendly {
+  grid-column: span 2/4;
+}
+.global-community {
+  grid-column: span 2/4;
+}
+.exclusive-interviews {
+  grid-column: span 2;
 }
 
 /* responsive for mobile or small device */
@@ -225,7 +280,10 @@ body {
   .about-section {
     max-width: 90%;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+  }
+  .info {
+    margin-bottom: 40px;
   }
   .overview-container {
     display: grid;
@@ -234,15 +292,43 @@ body {
     align-items: center;
     margin: 0 auto;
     padding-top: 40px;
+    padding-bottom: 0px;
   }
   .value {
     font-size: 2.5rem;
   }
-  .about-title {
+  .section-title {
     font-size: 2rem;
   }
   .about-info {
     margin-bottom: 40px;
+  }
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+  .audio-card {
+    grid-row: auto;
+  }
+  .mobile-friendly {
+    grid-column: auto;
+  }
+  .global-community {
+    grid-column: auto;
+  }
+  .exclusive-interviews {
+    grid-column: auto;
+  }
+  .feature-card {
+    justify-content: flex-start;
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .choose-title {
+    padding-top: 40px;
+    padding-bottom: 16px;
   }
 }
 
