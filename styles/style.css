@@ -9,7 +9,6 @@
 
 body {
   font-family: "Inter", sans-serif;
-
   background-color: #1a0b2e;
 }
 .navbar {
@@ -65,13 +64,15 @@ body {
   background-image: url("../assets/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
-  padding: 170px 525px;
+  padding-top: 100px;
+  padding-bottom: 170px;
 }
 .banner {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 420px;
+  height: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,8 +126,29 @@ body {
   .navbar {
     padding-left: 20px;
     padding-right: 20px;
+    border-bottom: 1px solid #412567;
   }
   .logo {
     max-width: 137px;
+  }
+  .banner {
+    width: 180px;
+    height: 180px;
+  }
+  .center-image {
+    width: 46px;
+    height: 70px;
+  }
+  .banner-title {
+    font-size: 2.5rem;
+    margin-top: 24px;
+  }
+
+  .banner-section {
+    background-image: url("../assets/mobile-hero-bg.png");
+    background-size:;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
   }
 }
