@@ -280,6 +280,46 @@ body {
   color: #00ff88;
   font-weight: 600;
 }
+
+/* host section style  */
+.host-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.host-section h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.host-container {
+  background-color: #250d44;
+  margin-bottom: 120px;
+  border-radius: 40px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.host-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+.host-info p {
+  padding-bottom: 24px;
+}
+.host-social-links {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.links {
+  max-width: 60px;
+  border: 1px solid #533c72;
+  border-radius: 100%;
+  text-align: center;
+}
+
 /*! responsive for mobile or small device */
 @media screen and (max-width: 576px) {
   .nav-list,
