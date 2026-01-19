@@ -132,8 +132,8 @@ body {
     max-width: 137px;
   }
   .banner {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
   .center-image {
     width: 46px;
@@ -146,9 +146,9 @@ body {
 
   .banner-section {
     background-image: url("../assets/mobile-hero-bg.png");
-    background-size:;
+    background-size: cover;
     background-position: center;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 }
