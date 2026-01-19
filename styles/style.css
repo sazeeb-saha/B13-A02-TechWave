@@ -150,13 +150,7 @@ body {
   line-height: 26px;
   margin-bottom: 80px;
 }
-.info {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
-  line-height: 26px;
-  margin-bottom: 80px;
-  text-transform: uppercase;
-}
+
 .overview-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -171,6 +165,13 @@ body {
   color: #00ff88;
   font-size: 3rem;
   font-weight: 900;
+}
+.info {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 26px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
 }
 
 /* responsive for mobile or small device */
@@ -221,11 +222,27 @@ body {
     border-radius: 30px;
     padding: 8px 16px;
   }
+  .about-section {
+    max-width: 90%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .overview-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .value {
+    font-size: 2.5rem;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-info {
+    margin-bottom: 40px;
   }
 }
 
