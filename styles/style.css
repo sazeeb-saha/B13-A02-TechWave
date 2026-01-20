@@ -314,10 +314,64 @@ body {
   gap: 8px;
 }
 .links {
-  max-width: 60px;
   border: 1px solid #533c72;
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   text-align: center;
+  align-content: center;
+}
+
+.insta-logo {
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.youtube-logo {
+  margin-top: 5px;
+}
+
+/* footer style  */
+footer {
+  background-image: url("../assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.footer-social-links {
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.group-1 {
+  gap: 60px;
+}
+.group-2 {
+  gap: 60px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+.copyright-text {
+  font-size: 1rem;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*! responsive for mobile or small device */
@@ -434,10 +488,66 @@ body {
   }
   .video-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .video-title {
     font-size: 1rem;
     font-weight: 700;
+  }
+  .host-section {
+    padding: 60px 20px 40px 20px;
+  }
+  .host-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+  .host-meet-title {
+    display: none;
+  }
+  .host-info {
+    text-align: center;
+  }
+  .host-info h2 {
+    font-size: 1.5rem;
+    padding-bottom: 16px;
+  }
+  .host-info p {
+    padding-bottom: 16px;
+  }
+  .host-social-links {
+    justify-content: center;
+  }
+  footer {
+    background-image: url("../assets/footer-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .footer-container {
+    gap: 24px;
+  }
+  .footer-logo {
+    max-width: 320px;
+    max-height: 30px;
+  }
+  .footer-social-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .group-1 {
+    gap: 16px;
+  }
+  .group-2 {
+    gap: 16px;
+  }
+  .social-links {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 
