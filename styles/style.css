@@ -121,6 +121,7 @@ body {
   gap: 8px;
 }
 .btn-secondary {
+  background-color: transparent;
   border: 1px solid #00ff88;
   padding: 12px 16px;
   border-radius: 30px;
